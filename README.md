@@ -1,2 +1,2 @@
 # ManonsPresent
-For my darling
+A digital present for my girlfriend
