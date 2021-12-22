@@ -1,0 +1,85 @@
+body {
+    background-color: aliceblue;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+footer {
+    text-align: center;
+}
+
+.darken {
+    background-color: grey;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.mainContent {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+    padding: 1em 1em;
+    width: 18em;
+    margin: 0 auto;
+    box-shadow: 2px 2px 15px rgb(160, 159, 159);
+}
+
+.present {
+    margin: 4em auto 5em;
+    width: 20em;
+    height: 20em;
+    background-color: rgb(128, 128, 238);
+    box-shadow: 2px 2px 15px black;
+}
+
+.cross {
+    background: red;
+    height: 20em;
+    width: 2em;
+    position: relative;
+    left: 10em;
+    box-shadow: 2px 2px 15px black;
+    z-index: 1;
+}
+
+.cross2 {
+    background: red;
+    height: 2em;
+    width: 20em;
+    position: relative;
+    bottom:10em;
+    box-shadow: 2px 2px 15px black;
+}
+
+/*Animation*/
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.reveal {
+    background-image:url("Reveal_img.png");
+    background-size: 20em 20em;
+    animation: fadeOutAnimation ease 3s fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+     }
+}
